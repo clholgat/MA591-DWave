@@ -210,72 +210,105 @@
 \subsection{Chimera C4 Chip}
 
 \begin{frame}{Infrastructure}
+
+  \begin{center}
+ \includegraphics[scale=.2]{../img/13073_D_Wave_Orion_16_Qubit}
+ \end{center}
+ 
  \begin{itemize}
-  \item Superconducting metals operated at ultra low temperatures
+  \item Superconducting metals operating at ultra low temperatures
   \item Manufactured with existing fabrication techniques
-  
  \end{itemize}
 
 \end{frame}
 
+\begin{frame}{The Qubit}
+ \begin{center}
+  \includegraphics[scale=.7]{../img/Real_Qubit}
+ \end{center}
 
-\begin{frame}{Goals}
+\end{frame}
 
-  You can create overlays\dots
+\begin{frame}{Schematic}
+ \begin{center}
+  \includegraphics[scale=.7]{../img/Qubit_Schematic}
+ \end{center}
+
+\end{frame}
+
+\begin{frame}{System}
+ \begin{center}
+  \includegraphics[scale=.7]{../img/Qubit_System}
+ \end{center}
+
+\end{frame}
+
+\subsection{Applications}
+
+\begin{frame}{Orion}
+\begin{center}
+ \includegraphics[scale=.125]{../img/Orion}
+  \includegraphics[scale=.3]{../img/Open_Orion}
+\end{center}
+ 
+\begin{itemize}
+  \item 16 qubit System
   \begin{itemize}
-  \item using the \texttt{pause} command:
-    \begin{itemize}
-    \item
-      First item.
-      \pause
-    \item    
-      Second item.
-    \end{itemize}
-  \item
-    using overlay specifications:
-    \begin{itemize}
-    \item<3->
-      First item.
-    \item<4->
-      Second item.
-    \end{itemize}
-  \item
-    using the general \texttt{uncover} command:
-    \begin{itemize}
-      \uncover<5->{\item
-        First item.}
-      \uncover<6->{\item
-        Second item.}
-    \end{itemize}
+   \item www.apps.dwavesys.com
+   \item Orion web services API
   \end{itemize}
+
+ \end{itemize}
+
 \end{frame}
 
+\begin{frame}{Google's Interest}
+ \begin{itemize}
+  \item Image matching
+  \begin{itemize}
+   \item Google Goggles
+   \item Face Recognition
+  \end{itemize}
+  \item Machine learning
+  \begin{itemize}
+   \item Recognizing cars
+  \end{itemize}
 
-\section{Our Results/Contribution}
+ \end{itemize}
 
-\subsection{Main Results}
-
-\begin{frame}{Make Titles Informative.}
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\section{Controversy}
+
+\subsection{Is it Really a Quantum Computer?}
+
+\begin{frame}{DiVincenzo}
+ \begin{enumerate}
+  \item A scalable physical system with well characterized qubits
+  \item The ability to initialize state
+  \item Long relevant decoherence times
+  \item Universal set of quantum gates
+  \item The ability to measure specific quibits
+ \end{enumerate}
+
 \end{frame}
 
-\begin{frame}{Make Titles Informative.}
+\subsection{Complexity Theory}
+
+\begin{frame}{P == NP?}
+ \begin{itemize}
+  \item QUBO \(\supset\) P
+  \item Goldstone, Gutmann, and Sipser adiabatic algorithmic solution for 3-SAT
+  \item Aharonov, van Dam, et al adiabatic quantum computation is equivalent to standard computation (NMR)
+  \item Problems with simulated annealing
+  \begin{itemize}
+   \item QUBO solutions are only NP-Hard
+  \end{itemize}
+
+
+ \end{itemize}
+
 \end{frame}
-
-
-\subsection{Basic Ideas for Proofs/Implementation}
-
-\begin{frame}{Make Titles Informative.}
-\end{frame}
-
-\begin{frame}{Make Titles Informative.}
-\end{frame}
-
-\begin{frame}{Make Titles Informative.}
-\end{frame}
-
 
 
 \section*{Summary}
@@ -285,11 +318,11 @@
   % Keep the summary *very short*.
   \begin{itemize}
   \item
-    The \alert{first main message} of your talk in one or two lines.
+    Adiabatic quantum computating is feasible with current manufacturing techniques and because of long decoherence times.
   \item
-    The \alert{second main message} of your talk in one or two lines.
+    The Chimera C4 chip has been demonstrated successfully.
   \item
-    Perhaps a \alert{third message}, but not more than that.
+    The actual quantum nature of the system is controversial.
   \end{itemize}
   
   % The following outlook is optional.
@@ -299,9 +332,9 @@
     Outlook
     \begin{itemize}
     \item
-      Something you haven't solved.
+      D-Wave has yet to produce a fully entangled system due to bus connectivity issues.
     \item
-      Something else you haven't solved.
+      The backend of Orion is still a simulation but should be up and running soon.
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -311,30 +344,55 @@
 % All of the following is optional and typically not needed. 
 \appendix
 \section<presentation>*{\appendixname}
-\subsection<presentation>*{For Further Reading}
+\subsection<presentation>*{More Resources}
 
 \begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
+  \frametitle<presentation>{More Resources}
     
   \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
  
     
   \beamertemplatearticlebibitems
   % Followed by interesting articles. Keep the list short. 
+  \bibitem{AQC=SQC2005}
+    D.~Aharonov, W.~vanDam, J.~Kempe, Z.~Landau, S.~Lloyd, O.~Regev
+    \newblock Adiabatic Quantum Computation is Equivalent to Standard Quantum Computation.
+    \newblock {\em arXiv:quant-ph/0405098v2},2005.
+  
+  \bibitem{PIQC2000}
+    D.~DiVincenzo.
+    \newblock The Physical Implementation of Quantum Computation.
+    \newblock {\em arXiv:quant-ph/0002077v3},2000.
 
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
+  \bibitem{AQC2000}
+    E.~Farhi, J.~Goldstone, S.~Gutmann, M.~Sipser
+    \newblock Quantum Computation by Adiabatic Evolution.
+    \newblock {\em arXiv:quant-ph/0001106v1},2000.
+
+  \bibitem{RSFQ2009}
+    R.~Harris et al.
+    \newblock Experimental Demonstration of a Robust and Scalable Flux Qubit
+    \newblock {\em arXiv:0909.4321v1 [cond-mat.supr-con]},2009.
+
+  \bibitem{GRB2009}
+    H.~Neven
+    \newblock Machine Learning with Quantum Algorithms
+    \newblock {\em http://googleresearch.blogspot.com/2009/12/machine-learning-with-quantum.html},2009.
+
+  \bibitem{GRBlog2010}
+    G.~Rose
+    \newblock rose.blog
+    \newblock {\em http://dwave.wordpress.com/}
+
+  \bibitem{GTT2007}
+    H.~Neven, G.~Rose
+    \newblock Google Tech Talks: Quantum Computing
+    \newblock {\em http://www.youtube.com/watch?v=I56UugZ_8DI&feature=channel},2007.
+
+  \bibitem{dwavesite2010}
+    \newblock D-Wave Systems Inc.
+    \newblock {\em http://www.dwavesys.com/}
+
   \end{thebibliography}
 \end{frame}
 
