@@ -149,12 +149,12 @@
 \begin{frame}{Application}
 
   \begin{itemize}
-   \item Start with \(|\psi(0)\rangle\) as the ground state of \(\mathcal{H}(0)\).
-    \pause
-   \item Quantum systems evolve according to the Schr\"{o}dinger equation.
+    \item Quantum systems evolve according to the Schr\"{o}dinger equation.
      \[ i \frac{d}{dt} |\psi(t)\rangle = \mathcal{H}(t)|\psi(t)\rangle\]
     \pause
-   \item If there is a non-zero gap between \(|\psi(0)\rangle\), the ground state, and the next lowest energy level as long as \(\mathcal{H}(t)\) varies slowly enough (i.e. little energy is added to the system) \(|\psi(t)\rangle\) will remain close to the instantaneous ground state of \(\mathcal{H}(t)\).
+   \item Start with \(|\psi(0)\rangle\) as the ground state of \(\mathcal{H}(0)\).
+    \pause
+   \item If there is a non-zero gap between \(|\psi(0)\rangle\), and the next lowest energy level as long as \(\mathcal{H}(t)\) varies slowly enough (i.e. little energy is added to the system) \(|\psi(t)\rangle\) will remain close to the instantaneous ground state of \(\mathcal{H}(t)\).
   \end{itemize}
 
 \end{frame}
@@ -166,7 +166,9 @@
     \begin{itemize}
      \item Specifying \(\mathcal{H}_P\) is easy but finding its ground state is difficult.
     \end{itemize}
+    \pause
    \item Choose an initial Hamiltonian \(\mathcal{H}_B\) whose ground state is easy to find.
+    \pause
    \item Construct the system: \[\mathcal{H}(t) = (1-t/T)\mathcal{H}_B + (t/T)\mathcal{H}_P\] Where T is a parameter to control the rate at which \(\mathcal{H}(t)\) varies.  Normalized to \(\tilde{\mathcal{H}}(s), 0 \leq s\leq 1\): \[\tilde{\mathcal{H}}(s) = (1-s)\mathcal{H}_B + s\mathcal{H}_P\]
 
   \end{itemize}
@@ -201,7 +203,9 @@
    \item arXiv:quant-ph/0001106v1 3-SAT
    \item NPC controversy
   \end{itemize}
+  \pause
   \item Equivalent to finding low energy states of classical Ising Hamiltonian: \[\mathcal{H} = \displaystyle\sum\limits_{i}h_i\sigma_{zi} + \displaystyle\sum\limits_{ij}J_{ij}\sigma_{zi}\sigma_{zj}\]
+  \pause
   \item Find a reasonable way to do it
  \end{itemize}
 
@@ -285,9 +289,13 @@
 \begin{frame}{DiVincenzo}
  \begin{enumerate}
   \item A scalable physical system with well characterized qubits
+  \pause
   \item The ability to initialize state
+  \pause
   \item Long relevant decoherence times
+  \pause
   \item Universal set of quantum gates
+  \pause
   \item The ability to measure specific quibits
  \end{enumerate}
 
@@ -298,8 +306,10 @@
 \begin{frame}{P == NP?}
  \begin{itemize}
   \item QUBO \(\supset\) P
+  \pause
   \item Goldstone, Gutmann, and Sipser adiabatic algorithmic solution for 3-SAT
   \item Aharonov, van Dam, et al adiabatic quantum computation is equivalent to standard computation (NMR)
+  \pause
   \item Problems with simulated annealing
   \begin{itemize}
    \item QUBO solutions are only NP-Hard
