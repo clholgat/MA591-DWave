@@ -12,6 +12,7 @@
 \title{Adiabatic Quantum Computation\\ at D-Wave Systems Inc.}
 \date{05/10/2010}
 
+
 \begin{document}
 \maketitle
 
@@ -62,7 +63,7 @@ which operates on low power at ultra low temperatures and has been manufactured 
 
 In 2007 D-Wave demonstrated example pattern matching on Orion, their 16-qubit system powered by the Chimera C4 chip.  Since then they have been working with Google on imaged based image search for applications like Google Goggles that makes use of vector matching, and on machine learning to recognize cars for vehicle safety systems.  D-Wave recently released early access to an API for Orion web services to allow users to submit programs to run on the quantum server.  Currently the web service back-ends to a server that simulates the Orion system but the actual quantum system should be up and running eventually.
 
-\paragraph{Controversy} exists as to whether or not Orion is a real quantum computer.  D-Wave has published unconfirmed reports of a speed up in processing time but skeptics attribute it to the super conducting materials.  Orion conforms to some of the DiVincenzo criteria for quantum computers but not all:
+\paragraph{Controversy} exists as to whether or not Orion is a real quantum computer.  D-Wave has published unconfirmed reports of a speed up in processing time but skeptics attribute it to the super conducting materials.  Orion conforms to some of the Vincenz criteria for quantum computers but not all:
   \begin{enumerate}
   \item A scalable physical system with well characterized qubits
   
@@ -86,6 +87,56 @@ In 2007 D-Wave demonstrated example pattern matching on Orion, their 16-qubit sy
  \end{enumerate}
 
 Further controversy surrounds the problems targeted by Orion.  A subset of QUBO problems are NP-Complete; one of the fundamental characteristics of NP-Complete problems is that every NP-Complete problem can be reduced to every other NP-Complete problem.  Goldman, Gutmann, and Sipser published an adiabatic algorithm to solve 3-SAT, a well known NP-Complete problem.  Theoretically it should also be possible to solve all NP-Complete problems with an adiabatic quantum computer but because Orion uses simulated annealing techniques it does not produce exact results and therefore does not solve NP-Complete problems.
+
+\bigskip 
+The corresponding presentation can be found online: {\em http://github.com/clholgat/MA591-DWave }
+
+
+  \begin{thebibliography}{10}
+ 
+  % Followed by interesting articles. Keep the list short. 
+  \bibitem{AQC=SQC2005}
+    D.~Aharonov, W.~vanDam, J.~Kempe, Z.~Landau, S.~Lloyd, O.~Regev
+    \newblock Adiabatic Quantum Computation is Equivalent to Standard Quantum Computation.
+    \newblock {\em arXiv:quant-ph/0405098v2},2005.
+  
+  \bibitem{PIQC2000}
+    D.~Vincenz.
+    \newblock The Physical Implementation of Quantum Computation.
+    \newblock {\em arXiv:quant-ph/0002077v3},2000.
+
+  \bibitem{AQC2000}
+    E.~Farhi, J.~Goldstone, S.~Gutmann, M.~Sipser
+    \newblock Quantum Computation by Adiabatic Evolution.
+    \newblock {\em arXiv:quant-ph/0001106v1},2000.
+
+  \bibitem{RSFQ2009}
+    R.~Harris et al.
+    \newblock Experimental Demonstration of a Robust and Scalable Flux Qubit
+    \newblock {\em arXiv:0909.4321v1 [cond-mat.supr-con]},2009.
+
+  \bibitem{GRB2009}
+    H.~Neven
+    \newblock Machine Learning with Quantum Algorithms
+    \newblock {\em http://googleresearch.blogspot.com/2009/12/machine-learning-with-quantum.html},2009.
+
+  \bibitem{GRBlog2010}
+    G.~Rose
+    \newblock rose.blog
+    \newblock {\em http://dwave.wordpress.com/}
+
+  \bibitem{GTT2007}
+    H.~Neven, G.~Rose
+    \newblock Google Tech Talks: Quantum Computing
+    \newblock {\em http://www.youtube.com/watch?v=I56UugZ_8DI&feature=channel},2007.
+
+  \bibitem{dwavesite2010}
+    \newblock D-Wave Systems Inc.
+    \newblock {\em http://www.dwavesys.com/}
+
+
+  \end{thebibliography}
+
 
 
 \end{document}
